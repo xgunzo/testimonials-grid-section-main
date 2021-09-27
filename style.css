@@ -221,3 +221,31 @@ body {
     }
 
 }
+
+@media only screen and (min-width: 1680px) {
+    .wrapper {
+        width: 90%;
+        display: grid;
+        padding: 11em 0;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2);
+        grid-column-gap: 1em;
+        grid-row-gap: 2em;
+        transform: scale(80%);
+    }
+
+    .grid-column-1 {
+        grid-column: 1/3;
+        z-index: 1;
+    }
+
+    .bg-img {
+        position: absolute;
+        z-index: -1;
+        left: 37em;
+        top: 11em;
+        height: 15%;
+    }
+    
+}
